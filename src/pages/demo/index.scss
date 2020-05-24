@@ -1,0 +1,124 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 400px;
+  height: 100vh;
+  background: #fff;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  padding: 30rpx;
+  text-align: center;
+}
+.main22 {
+  height: 400px;
+  height: 100vh;
+  background: #eeeeee;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: env(safe-area-inset-bottom);
+  .img {
+    width: 100%;
+    height: 500px;
+    line-height: 500px;
+    color: #fff;
+    background: linear-gradient(280deg, #fff 0%, red 50%, blue 80%);
+  }
+  .btn {
+    position: absolute;
+    bottom: 0;
+    width: 700rpx;
+    height: 100rpx;
+    background: rgb(5, 231, 35);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 25rpx;
+    bottom: env(safe-area-inset-bottom);
+  }
+}
+.nav {
+  height: 0;
+}
+.lxy-nav-bar-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  font-size: 15px;
+  border-radius: 16px;
+  padding-left: 5px;
+  position: relative;
+  background: #f6f6f6;
+}
+
+.srch-ipt {
+  height: 32px;
+  text-align: left;
+  font-size: 15px;
+}
+.ipt-placeholder {
+  font-size: 15px;
+  color: #bebebe;
+  text-align: left;
+}
+.lxy-nav-bar-search__input {
+  flex: 1;
+}
+.lxy-nav-bar-search__icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("data:image/svg+xml,%3Csvg t='1565691512239' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='1240' width='48' height='48'%3E%3Cpath d='M819.2 798.254545L674.909091 653.963636c46.545455-48.872727 74.472727-114.036364 74.472727-186.181818 0-151.272727-123.345455-274.618182-274.618182-274.618182-151.272727 0-274.618182 123.345455-274.618181 274.618182 0 151.272727 123.345455 274.618182 274.618181 274.618182 65.163636 0 128-23.272727 174.545455-62.836364l144.290909 144.290909c2.327273 2.327273 6.981818 4.654545 11.636364 4.654546s9.309091-2.327273 11.636363-4.654546c6.981818-6.981818 6.981818-18.618182 2.327273-25.6zM235.054545 467.781818c0-132.654545 107.054545-239.709091 239.709091-239.709091 132.654545 0 239.709091 107.054545 239.709091 239.709091 0 132.654545-107.054545 239.709091-239.709091 239.709091-132.654545 0-239.709091-107.054545-239.709091-239.709091z' fill='%23999999' p-id='1241'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.location {
+  font-size: 14px;
+  width: 52px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  padding-left: 10px;
+}
+.location .icon {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  margin-left: 2.5px;
+}
+.location .btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lxy-navbar-extclass .lxy-nav-bar__btn_goback {
+  --nav-bar-goback-icon: url("data:image/svg+xml,%3Csvg t='1565943723828' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='3607' width='48' height='48'%3E%3Cpath d='M861.7 447.5c-14.9-35-36.1-66.4-63.1-93.4-38.2-38.3-85.4-64.9-139-78.3-23.9-6-48.6-8.1-73.3-8.1H336.8v-83.3c0-12.1-14.1-18.8-23.5-11.2l-162 131.3c-13.7 11.1-13.7 32 0 43.1L313.4 479c9.4 7.6 23.5 0.9 23.5-11.2v-83.3h245.3c92.6 0 175.8 67.3 185.1 159.4 10.7 105.8-73 195.8-176.7 195.8h-337c-32.3 0-58.4 26.2-58.4 58.4 0 32.3 26.2 58.4 58.4 58.4h332.8c24.6 0 49.4-2.1 73.3-8.1 53.6-13.4 100.7-40.1 139-78.3 27-27 48.2-58.4 63.1-93.4 15.5-36.4 23.3-75 23.3-114.7-0.1-39.5-8-78.1-23.4-114.5z m0 0' fill='%23000000' p-id='3608'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.lxy-navbar-extclass .lxy-nav-bar__btn_gohome {
+  --nav-bar-gohome-icon: url("data:image/svg+xml,%3Csvg t='1565943334961' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='3467' width='48' height='48'%3E%3Cpath d='M426.666667 597.333333h170.666666v298.666667h-170.666666z' fill='%23000000' p-id='3468'%3E%3C/path%3E%3Cpath d='M871.253333 434.346667L542.293333 98.133333a42.666667 42.666667 0 0 0-60.586666 0l-328.96 336.64A85.333333 85.333333 0 0 0 128 495.786667V853.333333a85.333333 85.333333 0 0 0 80.64 85.333334H341.333333v-384a42.666667 42.666667 0 0 1 42.666667-42.666667h256a42.666667 42.666667 0 0 1 42.666667 42.666667v384h132.693333A85.333333 85.333333 0 0 0 896 853.333333v-357.546666a88.32 88.32 0 0 0-24.746667-61.44z' fill='%23000000' p-id='3469'%3E%3C/path%3E%3C/svg%3E");
+}

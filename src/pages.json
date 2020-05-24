@@ -1,0 +1,154 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES"
+        }
+      }
+    },
+    {
+      "path": "pages/demo/demo1",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES"
+        }
+      }
+    },
+    {
+      "path": "pages/demo/demo2",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES"
+        }
+      }
+    },
+    {
+      "path": "pages/demo/demo3",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES"
+        }
+      }
+    },
+    {
+      "path": "pages/demo/demo4",
+      "style": {
+        "navigationBarTitleText": "",
+        // "navigationBarTextStyle": "white",
+        "navigationStyle": "custom",
+        "backgroundColor": "#f8f8f8",
+        "backgroundColorTop": "#00000",
+        "backgroundColorBottom": "#f8f8f8",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES"
+          // "titleBarColor": "#000000"
+        }
+      }
+    },
+    {
+      "path": "pages/demo/demo5",
+      "style": {
+        "navigationBarTitleText": "",
+        // "navigationBarTextStyle": "white",
+        "navigationStyle": "custom",
+        "backgroundColor": "#f8f8f8",
+        "backgroundColorTop": "#00000",
+        "backgroundColorBottom": "#f8f8f8",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES"
+          // "titleBarColor": "#000000"
+        }
+      }
+    },
+    {
+      "path": "pages/demo/demo6",
+      "style": {
+        "navigationBarTitleText": "",
+        // "navigationBarTextStyle": "white",
+        "navigationStyle": "custom",
+        "backgroundColor": "#f8f8f8",
+        "backgroundColorTop": "#00000",
+        "backgroundColorBottom": "#f8f8f8",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES"
+          // "titleBarColor": "#000000"
+        }
+      }
+    },
+    {
+      "path": "pages/demo/demo7",
+      "style": {
+        "navigationBarTitleText": "",
+        // "navigationBarTextStyle": "white",
+        "navigationStyle": "custom",
+        "backgroundColor": "#f8f8f8",
+        "backgroundColorTop": "#00000",
+        "backgroundColorBottom": "#f8f8f8",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES"
+        }
+      }
+    },
+    {
+      "path": "pages/demo/demo8",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES"
+        }
+      }
+    },
+    {
+      "path": "pages/demo/demo9",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationBarTextStyle": "white",
+        "navigationStyle": "custom",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES",
+          "titleBarColor": "#000000"
+        }
+      }
+    },
+    {
+      "path": "pages/demo/demo10",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "mp-alipay": {
+          "transparentTitle": "always",
+          "titlePenetrate": "YES"
+        }
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uniapp-navigation-bar",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundTextStyle": "light"
+  }
+}
