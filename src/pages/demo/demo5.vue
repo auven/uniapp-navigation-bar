@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import NavBar from '@/components/navigation-bar'
+import NavBar from '@/components/navigation-bar/navigation-bar'
 import mixin from './mixin'
 export default {
   components: {

@@ -36,8 +36,31 @@
 
 ```sh
 npm i uniapp-navigation-bar -S
+
 # 组件中使用到了 `scss` ，所以需要安装 `node-sass` 和 `sass-loader`，已安装可跳过
 npm i node-sass sass-loader -D
+```
+
+#### 修改 babel.config.js
+
+```js
+...
+process.UNI_LIBRARIES = process.UNI_LIBRARIES || ['@dcloudio/uni-ui']
+const UNI_LIBRARIES = process.UNI_LIBRARIES // <-- 修改1
+UNI_LIBRARIES.push('uniapp-navigation-bar') // <-- 修改2
+UNI_LIBRARIES.forEach(libraryName => { // <-- 修改3
+  plugins.push([
+    'import',
+    {
+      'libraryName': libraryName,
+      'customName': (name) => {
+        return `${libraryName}/lib/${name}/${name}`
+      }
+    },
+    libraryName // <-- 修改4
+  ])
+})
+...
 ```
 
 #### 引用
@@ -45,15 +68,18 @@ npm i node-sass sass-loader -D
 ```vue
 <template>
   <div>
-    <nav-bar title="自定义导航栏" ref="navBar" />
+    <navigation-bar title="自定义导航栏" ref="navBar" />
   </div>
 </template>
 
 <script>
-import NavBar from 'uniapp-navigation-bar/src/navigation-bar'
+// 方式一
+import { NavigationBar } from 'uniapp-navigation-bar'
+// 方式二
+// import NavigationBar from 'uniapp-navigation-bar/lib/navigation-bar/navigation-bar'
 export default {
   components: {
-    NavBar
+    NavigationBar
   }
 }
 </script>
@@ -100,7 +126,7 @@ pageA.vue
 ```vue
 <template>
   <div>
-    <nav-bar ref="navBar" />
+    <navigation-bar ref="navBar" />
   </div>
 </template>
 
